@@ -20,5 +20,5 @@ void loop() {
   int pwm = mapearValor(lectura, 255);
   analogWrite(pinLed, pwm);
 
-  delay(250); //delay de 500
+  delay(2500); //delay de 500
 }
