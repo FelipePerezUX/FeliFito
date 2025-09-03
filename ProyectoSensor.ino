@@ -1,6 +1,6 @@
 #include "funciones.h"
 
-const int pinSensor = A0;
+const int pinSensor = A0; //Variables constantes 
 const int pinLed = 9;
 
 void setup() {
@@ -12,7 +12,7 @@ void loop() {
   int lectura = leerSensor(pinSensor);
   mostrarValor(lectura);
 
-  float voltaje = calcularVoltaje(lectura);
+  float voltaje = calcularVoltaje(lectura);  
   Serial.print("Voltaje: ");
   Serial.print(voltaje);
   Serial.println(" V");
